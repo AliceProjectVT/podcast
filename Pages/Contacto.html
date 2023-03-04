@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="../imagenesss/Arthur-Schopenhauer-1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="../index.html">
+            <img class="logo" src="../imagenesss/Icono Pagina.png" alt="monashina">
+        </a>
+
+
+        <ul class="flexbox">
+            <li class="navimenu marca"><a href="../index.html">Home</a></li>
+            <li class="navimenu marca"><a href="../Pages/Polola.html">Ejemplo Flexbox</a></li>
+            <li class="navimenu marca"><a href="../Pages/productos.html">Productos</a></li>
+            <li class="navimenu marca"><a href="../Pages/Login.html">Login</a></li>
+
+        </ul>
+
+
+
+
+        <div class="menu-desplegable" id="desplegable">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="movilres" id="menu">
+            <span class="navimenu">Formulario</span>
+            <span class="navimenu">Tabla</span>
+            <span class="navimenu">Polola</span>
+            <span class="navimenu">Lista</span>
+        </div>
+
+    </header>
+    <!-- Cabeza de Pagina encapsulada -->
+    <fieldset>
+        <Legend>Información Personal</Legend>
+        <form action="">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" placeholder="Ingresa tu nombre">
+            <br>
+            <br>
+            <label for="Correo">E-mail</label>
+            <input type="email" id="Correo" placeholder="Ingresa un correo valido">
+            <br>
+            <br>
+            <Label id="Sexo">Sexo</Label>
+
+            <select name="Sexo" id="Sexo">
+                <option>Male</option>
+                <option value="">Female</option>
+            </select>
+            <br>
+            <!-- Campo de texto para solicitud -->
+
+            <Legend>Solicitud</Legend>
+            <textarea name="" id="Solicitud" cols="30" rows="10" placeholder="Dejanos un mensaje"></textarea>
+
+            <br>
+            <!-- Checkbox Servicios -->
+
+            <Fieldset>
+
+                <legend>Servicios</legend>
+
+                <input type="checkbox" id="Horror">
+                <Label for="Horror">Horror</Label>
+
+                <input type="checkbox" id="Shooter">
+                <label for="Shooter">Shooter</label>
+            </Fieldset>
+            <br>
+
+
+            <p>¿Aceptas los benditos TyC?</p>
+
+            <input type="radio" name=" TyC" id="Si">
+            <label for="Si">Si</label>
+            <br>
+            <input type="radio" name=" TyC" id="No">
+            <label for="No">No</label>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <input type="button" value="Nada">
+
+
+        </form>
+    </fieldset>
+
+
+
+
+
+
+
+
+</body>
+<footer style="background-color: rgb(246, 135, 154);">
+
+    <hr>
+    <a href="./index.html">Pagina Principal</a>
+
+</footer>
+
+</html>

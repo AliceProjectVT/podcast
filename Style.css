@@ -1,0 +1,455 @@
+*{ 
+    padding: 0;
+    margin: 0;
+   
+
+    
+}
+body{
+    background-color: #ffe5f0;
+}
+.cuerpo{
+    border: 1px solid black;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fdcae1;
+    margin-top: 100px ;
+    height: 100%;
+    
+  }
+ 
+.contenedor-cards{
+    
+    background-color:#fdcae1 ;
+    width: 100%;
+    height: 100vh ;    
+    flex-wrap: wrap;
+    
+}
+.box-mod{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5ff4ab;
+  
+   
+ 
+}
+.tarjeta{
+    height: 100%;
+    
+       
+}
+.texto-tarjeta{
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+p.inicio-parrafo{
+    text-indent: 10px;
+}
+   
+/* Inicio Header */
+
+
+header{
+    height: 80px;
+    width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edbfd4;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    z-index: 12;
+}
+.logo{
+    height: 100%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    text-decoration: none ; 
+}
+.flexbox li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.flexbox li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: relative;
+    transition: width 0.5s;
+    box-sizing: border-box;
+    margin-bottom: 20px ;
+}
+
+.flexbox li a:hover::before{
+    width: 100%;
+   
+    
+}
+
+/* Fin header */
+/* Header responsivo */
+
+.navimenu{
+    font-size: 18px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+/* 3 lineas */
+.menu-desplegable{
+height: 20px;
+width: 30px;
+position: relative;
+display: none;
+cursor: pointer;
+
+}
+
+.menu-desplegable:hover{
+    opacity: 0.8;
+}
+
+.line{
+height: 2px;
+width: 100%;
+background-color: white;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+}
+
+.line:nth-of-type(1){
+    top: 0;
+    transform: translateY(0);
+}
+
+.line:nth-of-type(3){
+top: auto;
+bottom: 0;
+transform: translateY(0);
+}
+
+.movilres{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    transform: translateY(-50vh);
+    height: calc(40vh - 80px);
+    width: 100%;
+    display: none;
+    justify-content:  center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+    transition: 1s;
+
+}
+
+.open{
+    display: flex;
+    transition: 0.5s;
+    transform: translateY(0);
+}
+
+.movilres .navimenu{
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    transition: 0.5s;
+    }
+
+.movilres .navimenu:hover{
+    background-color: rgb(46, 46, 46);
+
+}
+
+@media (max-width: 768px){
+    .flexbox{
+        display: none;
+    }
+    .menu-desplegable{
+        display: block;
+    }
+}
+
+
+
+/* Fin header Responsivo */
+
+/* Productos, vitrina */
+
+.flex-container{
+    border: 1px solid black;
+    display: flex;
+    background: #ccc;
+   flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    height: 500px;
+    width: 800px ;
+}
+
+
+/*                  VITRINA                               ESTILO VITRINA      */
+
+
+
+.contenedor-producto{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center ; 
+    align-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+
+    margin-top: 200px;
+    
+
+
+}
+.producto{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    flex-flow:row wrap;
+    position: relative;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden
+    
+}
+.producto:hover{
+    cursor: pointer;
+    
+}
+
+
+
+.titulo-producto{
+    text-align: center;
+}
+.precio-producto{
+    color: #FF4E00;
+    font-weight: bold;
+}
+.foto-producto{
+    width: 100%;
+    height: 200px;
+}
+
+
+/* FIN VITRINA */
+
+/* CONTACTO */
+fieldset{
+   margin: 100px auto;
+   margin-left: 500px auto;
+   padding: 30px;
+   border: 2px solid black;
+   align-items: center;
+   justify-content: center;
+   width: 300px;
+   background-color: pink ;
+   
+}
+legend{
+    font-weight: bold;
+}
+.opcion{
+    width: 100%
+}
+/* Fin Contacto */
+
+/* .Contenedor-pagina{
+    width: 49%;
+    margin: 5% auto;
+    margin-left: 500px auto;
+    padding: 30px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: pink ;
+    
+
+} */
+
+.mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 300px auto;
+       
+}
+
+/* LOGIN */
+
+.login{
+    width: 200;
+    height: 420;
+    background: #87ffcb;
+    color: #ef5ca6;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 90px 50px;
+    border-radius: 20px
+
+}
+
+
+.login .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50%);
+
+}
+
+.login label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.login input[type="text"],.login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ef5ca6;
+    font-size: 16px;
+
+}
+
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2fafe2;
+    font-size: 18px ;
+    border-radius: 20px;
+
+    
+}
+.login input[type="Doxxeo"]:hover{
+    opacity: 0.8;
+}
+
+/* Para agregar algun link
+
+.login a{D
+    text-decoration: inone;
+    font-sizE: 12px;
+    line-heiGht: 20px;
+    colOr: darkgray;
+} */
+
+.login a:hover{
+    opacity: 0.6;
+}
+
+.icono{
+    position:  absolute;
+    height: 5%;
+    top: 50%;
+    opacity: 0.2;
+    transform: translateY(190%);
+    
+    opacity: 0.3;
+    cursor:pointer;
+ }
+
+ .icono:hover{ 
+    opacity: 0.9;
+ }
+
+ /* GALERIA VIDEOS */
+ .Contenido {
+    display: flex;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .flexx{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px ;
+    height: 100%;
+   
+    
+
+    
+
+ }
+ .caja{
+    height: 200px;
+    width: 200px;
+ }
+
+ .video{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    padding: 30px; 
+    border:1px solid #5ff4ab;
+    justify-content: center;
+    align-self: center;
+    }
