@@ -5,6 +5,11 @@
 
 
 }
+main .container{
+
+    padding: 30px 0;
+}
+
 
 body {
     background-color: #f380b0;
@@ -474,6 +479,11 @@ legend {
 }
 
 /* FOOTER */
+footer{
+    
+    padding-top: 1.25rem;
+    bottom: 0;
+}
 .pie_pagina {
     background-color: gray;
     width: 100%;
@@ -482,14 +492,14 @@ legend {
 }
 
 .pie_pagina .gridT {
+    margin: 0 auto;
+    padding: 1rem;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
-    display: grid;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+  
 }
 
 .pie_pagina .gridT .box figure {
@@ -517,7 +527,7 @@ legend {
     color: red;
 }
 
-.pie_pagina .gridT .box .rss-logo a {
+.contain .rss .rss-logo a {
 
     display: inline-block;
     text-decoration: none;
@@ -531,24 +541,24 @@ legend {
 
 }
 
-.pie_pagina .gridT .box .rss-logo .facebook:hover {
+.contain .rss .rss-logo .facebook:hover {
     background-color: white;
     color: blue;
 
 }
 
-.pie_pagina .gridT .box .rss-logo .youtube:hover {
+.contain .rss .rss-logo .youtube:hover {
     background-color: white;
     color: rgb(228, 27, 27);
 }
 
-.pie_pagina .gridT .box .rss-logo .instagram:hover {
+.contain .rss .rss-logo .instagram:hover {
     background-color: white;
     color: rgb(253, 4, 204);
 
 }
 
-.pie_pagina .gridT .box .rss-logo .twitter:hover {
+.contain .rss .rss-logo .twitter:hover {
     background-color: white;
     color: rgb(6, 191, 253);
 }
@@ -574,12 +584,12 @@ legend {
     /* Fin menu hamburguesa */
 
     /* Responsive Footer */
-    .pie_pagina .gridT {
+    /* .pie_pagina .gridT {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
-    }
+    } */
 
     /* Fin responsive Footer */
     /* Resoinsive Body */
