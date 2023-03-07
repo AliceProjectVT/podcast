@@ -7,60 +7,80 @@
 }
 
 body {
-    background-color: #ffe5f0;
-}
+    background-color: #f380b0;
+} 
 
 .cuerpo {
-    border: 1px solid black;
-    max-width: 1140px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fdcae1;
-    margin-top: 100px;
-    height: 100%;
-    margin-bottom: 100px;
+    background-color: #f380b0;
+} 
+/* INDEX */
 
+.grid-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "foto1 texto1"
+    "texto2 foto2"
+    "foto3 texto3";
+    padding: 20px 60px;
+    gap: 20px;
+    align-items: stretch;
+    
 }
 
-.contenedor-cards {
 
-    background-color: #fdcae1;
-    width: 100%;
-    height: 100vh;
-    flex-wrap: wrap;
-
+.texto1 {
+    grid-area: texto1;
 }
-
-.box-mod {
+.texto2 {
+    grid-area: texto2;
+}
+.texto3 {
+    grid-area: texto3;
+}
+.imagen1 {
+    grid-area: foto1;
+    background-image: url(./imagenesss/png-transparent-felsefeye-giris-philosophy-the-basics-felsefe-okuma-rehberi-contemporary-philosophy-the-book-of-healing-hand-drawn-sketch-books-template-painted-hand-thumbnail.png);
+    background-size: cover;
+    background-position: top;
+    min-height: 50vh;
+}
+.imagen2 {
+    grid-area: foto2;
+    background-image: url(./imagenesss/png-transparent-computer-icons-philosophy-can-symbol-philosophy-of-psychology-child-face-head.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+.imagen3 {
+    grid-area: foto3;
+    background-image: url(./imagenesss/png-clipart-thought-philosophy-knowledge-psychology-philosopher-others-miscellaneous-mammal.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+.contenedor-texto {
+    padding: 30px;
     display: flex;
-    width: 100%;
-    height: 200px;
-    margin: 20px auto;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5ff4ab;
-
-
-
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    gap: 10px;
+}
+.fondo_claro {
+    background-color: #FFCF9C; 
+    color:  rgb(35,57,91);
+}
+.bg-card {
+    background-color: rgb(61, 145, 117); 
+    color: white;
 }
 
-.tarjeta {
-    height: 100%;
+/* INDEX */
 
-
-}
-
-.texto-tarjeta {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-p.inicio-parrafo {
-    text-indent: 10px;
-}
 
 /* Inicio Header */
 
@@ -343,7 +363,7 @@ legend {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: -50px;
     left: calc(50% - 50%);
 
@@ -563,57 +583,19 @@ legend {
 
     /* Fin responsive Footer */
     /* Resoinsive Body */
-    .cuerpo {
-        border: none;
-        max-width: 1140px;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fdcae1;
-        margin-top: 100px;
-        height: 100%;
-        margin-bottom: 100px;
-    
-    }
-    
-    .contenedor-cards {
+    .grid-content {
         display: grid;
-        background-color: #fdcae1;
-        width: auto;
-        height: auto;        
-        place-content: center;
         grid-template-columns: 1fr;
-    
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "foto1"
+        "texto1"
+        "foto2"
+        "texto2"
+        "foto3"
+        "texto3";
+        padding: 20px 10px;
+        gap: 20px;
+        }
     }
-    
-    .box-mod {
-        display: grid;
-        width: 100%;
-        height: 100%;
-        margin: none;
-        place-content:center ;
-       
-        background-color: #5ff4ab;
-    
-    
-    
-    }
-    
-    .tarjeta {
-        height: 40%;
-        display: grid;
-        place-content: center ;
-    
-    
-    }
-    
-    .texto-tarjeta {
-        place-content: center;
-    }
-    
-    p.inicio-parrafo {
-        text-indent: 10px;
-    } 
-}
+
