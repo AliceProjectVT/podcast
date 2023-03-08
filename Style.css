@@ -607,5 +607,38 @@ footer{
         padding: 20px 10px;
         gap: 20px;
         }
+        /* Footer */
+    .contain .rss .rss-logo .facebook {
+        background-color: white;
+        color: blue;
+    
     }
+    
+    .contain .rss .rss-logo .youtube {
+        background-color: white;
+        color: rgb(228, 27, 27);
+    }
+    
+    .contain .rss .rss-logo .instagram {
+        background-color: white;
+        color: rgb(253, 4, 204);
+    
+    }
+    
+    .contain .rss .rss-logo .twitter {
+        background-color: white;
+        color: rgb(6, 191, 253);
+    }
+
+
+
+
+
+    }
+
+
+
+
+
+    
 
