@@ -11,9 +11,7 @@ main .container{
 }
 
 
-body {
-    background-color: #f380b0;
-} 
+
 
 .cuerpo {
     background-color: #f380b0;
@@ -84,144 +82,19 @@ body {
     color: white;
 }
 
-/* INDEX */
+/* FIN INDEX */
 
 
-/* Inicio Header */
+/* Bootstrap Header */
 
 
-header {
-    height: 80px;
-    width: 100%;
-    padding: 0 3rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #edbfd4;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-    z-index: 12;
-}
-
-.logo {
-    height: 100%;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-}
-
-.flexbox li a {
-    text-decoration: none;
-    color: white;
-    margin-right: 50px;
-}
-
-.flexbox li a::before {
-    display: block;
-    content: '';
-    width: 0%;
-    background: #444;
-    height: 5px;
-    top: 0;
-    position: relative;
-    transition: width 0.5s;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-.flexbox li a:hover::before {
-    width: 100%;
 
 
-}
+
+
 
 /* Fin header */
 /* Header responsivo */
-
-.navimenu {
-    font-size: 18px;
-    margin-left: 2rem;
-    cursor: pointer;
-}
-
-/* 3 lineas */
-.menu-desplegable {
-    height: 20px;
-    width: 30px;
-    position: relative;
-    display: none;
-    cursor: pointer;
-
-}
-
-.menu-desplegable:hover {
-    opacity: 0.8;
-}
-
-.line {
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.line:nth-of-type(1) {
-    top: 0;
-    transform: translateY(0);
-}
-
-.line:nth-of-type(3) {
-    top: auto;
-    bottom: 0;
-    transform: translateY(0);
-}
-
-.movilres {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    transform: translateY(-50vh);
-    height: calc(40vh - 80px);
-    width: 100%;
-    display: none;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    background-color: #1a1a1a;
-    color: white;
-    transition: 1s;
-
-}
-
-.open {
-    display: flex;
-    transition: 0.5s;
-    transform: translateY(0);
-}
-
-.movilres .navimenu {
-    height: 100%;
-    width: 100%;
-    border-bottom: 1px solid rgb(46, 46, 46);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-}
-
-.movilres .navimenu:hover {
-    background-color: rgb(46, 46, 46);
-
-}
 
 
 
@@ -231,96 +104,18 @@ ul {
 
 /* Productos, vitrina */
 
-.flex-container {
-    border: 1px solid black;
-    display: flex;
-    background: #ccc;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    margin: 0 auto;
-    align-items: center;
-    height: 500px;
-    width: 800px;
-}
 
-
-/*                  VITRINA                               ESTILO VITRINA      */
+/*                  VITRINA                        ESTILO VITRINA      */
 
 
 
-.contenedor-producto {
-    display: flex;
-    flex-flow: row wrap;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    margin: 0 auto;
-    padding: 20px;
 
-    margin-top: 200px;
-
-
-
-}
-
-.producto {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    flex-flow: row wrap;
-    position: relative;
-    width: 200px;
-    text-align: center;
-    margin: 5px;
-    overflow: hidden
-}
-
-.producto:hover {
-    cursor: pointer;
-
-}
-
-
-
-.titulo-producto {
-    text-align: center;
-}
-
-.precio-producto {
-    color: #FF4E00;
-    font-weight: bold;
-}
-
-.foto-producto {
-    width: 100%;
-    height: 200px;
-}
 
 
 /* FIN VITRINA */
 
 /* CONTACTO */
-fieldset {
-    margin: 100px auto;
-    margin-left: 500px auto;
-    padding: 30px;
-    border: 2px solid black;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    background-color: pink;
 
-}
-
-legend {
-    font-weight: bold;
-}
-
-.opcion {
-    width: 100%
-}
 
 /* Fin Contacto */
 
@@ -338,14 +133,7 @@ legend {
 
 } */
 
-.mapa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 300px auto;
 
-}
 
 /* LOGIN */
 
@@ -445,38 +233,6 @@ legend {
 
 /* GALERIA VIDEOS */
 
-.videos {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-    flex-wrap: wrap;
-
-}
-
-.caja_vid {
-    height: 300px;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid black;
-    background-color: #edbfd4;
-}
-
-.vid_descript {
-
-    text-align: center;
-    padding: auto;
-    gap: 5px;
-}
-
-.vid {
-    width: 100%;
-    height: 100%;
-
-
-}
 
 /* FOOTER */
 footer{

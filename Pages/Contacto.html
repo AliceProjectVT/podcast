@@ -21,134 +21,48 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a class="logo" href="../index.html">
-            <img class="logo" src="../imagenesss/Icono Pagina.png" alt="monashina">
-        </a>
 
-
-        <ul class="flexbox">
-            <li class="navimenu marca"><a href="../index.html">Home</a></li>
-            <li class="navimenu marca"><a href="../Pages/Polola.html">Ejemplo Flexbox</a></li>
-            <li class="navimenu marca"><a href="../Pages/productos.html">Productos</a></li>
-            <li class="navimenu marca"><a href="../Pages/Login.html">Login</a></li>
-
-        </ul>
-
-
-
-
-        <div class="menu-desplegable" id="desplegable">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+        <div class="navbar navbar-dark navbar-expand-lg bg-dark shadow-sm">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand  ">
+                    <strong>Principal</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="./productos.html" class="nav-link"> Merchandising</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Contacto.html" class="nav-link"> Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Login.html" class="nav-link"> Login VIP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Galeria.html" class="nav-link"> Galeria</a>
+                        </li>
+                    </ul>
+                    <a href="carrito.php" class=" btn btn-primary"> carrito </a>
+                </div>
+            </div>
         </div>
-        <div class="movilres" id="menu">
-            <span class="navimenu">Formulario</span>
-            <span class="navimenu">Tabla</span>
-            <span class="navimenu">Polola</span>
-            <span class="navimenu">Lista</span>
-        </div>
-
     </header>
     <!-- FIN HEADER -->
     <main>
-        <fieldset>
-            <Legend>Información Personal</Legend>
-            <form action="">
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre" placeholder="Ingresa tu nombre">
-                <br>
-                <br>
-                <label for="Correo">E-mail</label>
-                <input type="email" id="Correo" placeholder="Ingresa un correo valido">
-                <br>
-                <br>
-                <Label id="Sexo">Sexo</Label>
+  <fieldset>
+    <legend>Contactanos</legend>
 
-                <select name="Sexo" id="Sexo">
-                    <option>Male</option>
-                    <option value="">Female</option>
-                </select>
-                <br>
-                <!-- Campo de texto para solicitud -->
-
-                <Legend>Solicitud</Legend>
-                <textarea name="" id="Solicitud" cols="30" rows="10" placeholder="Dejanos un mensaje"></textarea>
-
-                <br>
-                <!-- Checkbox Servicios -->
-
-                <Fieldset>
-
-                    <legend>Servicios</legend>
-
-                    <input type="checkbox" id="Horror">
-                    <Label for="Horror">Horror</Label>
-
-                    <input type="checkbox" id="Shooter">
-                    <label for="Shooter">Shooter</label>
-                </Fieldset>
-                <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
 
 
-                <p>¿Aceptas los benditos TyC?</p>
-
-                <input type="radio" name=" TyC" id="Si">
-                <label for="Si">Si</label>
-                <br>
-                <input type="radio" name=" TyC" id="No">
-                <label for="No">No</label>
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-                <input type="button" value="Nada">
-
-
-            </form>
-        </fieldset>
+  </fieldset>
     </main>
     <!-- FIN MAIN -->
     <!-- FOOTER -->
-    <!-- <footer class="pie_pagina">
-    <div class="gridT">
-        <div class="box boxL">
-            <figure>
-                <a href="#">
-                    <img src="./imagenesss/Arthur-Schopenhauer-1.jpeg" alt="Logo pagina">
-                </a>
-            </figure>
-        </div>
-        <div class="box boxC">
-            <h2>SOBRE NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, architecto!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nostrum.</p>
-        </div>
-        <div class="box boxR">
-            <h2>SIGUENOS </h2>
-            <div class="rss-logo">
-                <a href="#" class="fa fa-facebook facebook"></a>
-                <a href="#" class="fa fa-youtube youtube"></a>
-                <a href="#" class="fa fa-instagram instagram"></a>
-                <a href="#" class="fa fa-twitter twitter"></a>
-            </div>
-        </div>
-    </div>
-    <div class="copirraiss">
-        <small>&copy; 2023 <b>AliceProjectVT</b> - Todos los derechos reservados.</small>
-    </div>
-
-
-
-
-
-
-
-
-
-
-</footer> -->
-    <!-- FIN FOOTER -->
     <footer>
         <div class="container-fluid contain">
             <div class="row p-5 bg-secondary text-white">
@@ -168,27 +82,15 @@
                         <a href="#" class="fa fa-instagram instagram"></a>
                         <a href="#" class="fa fa-twitter twitter"></a>
                     </div>
-    
-    
+
+
                 </div>
-    
-    
-    
-    
-    
                 <div class="col-xs-12 text-dark text-center">
                     <small>&copy; 2023 <b>AliceProjectVT</b> - Todos los derechos reservados.</small>
                 </div>
             </div>
-    
-    
-    
-    
-    
-    
         </div>
     </footer>
-
 
 
 
