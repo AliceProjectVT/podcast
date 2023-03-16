@@ -5,7 +5,7 @@
 
 
 }
-main .container{
+main  .container{
 
     padding: 30px 0;
 }
@@ -13,9 +13,6 @@ main .container{
 
 
 
-.cuerpo {
-    background-color: #f380b0;
-} 
 /* INDEX */
 
 .grid-content {
@@ -23,14 +20,14 @@ main .container{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr ;
-    grid-template-areas: 
+    grid-template-areas:
     "foto1 texto1"
     "texto2 foto2"
     "foto3 texto3";
     padding: 20px 60px;
     gap: 20px;
     align-items: stretch;
-    
+
 }
 
 
@@ -74,65 +71,25 @@ main .container{
     gap: 10px;
 }
 .fondo_claro {
-    background-color: #FFCF9C; 
+    background-color: #FFCF9C;
     color:  rgb(35,57,91);
 }
 .bg-card {
-    background-color: rgb(61, 145, 117); 
+    background-color: rgb(61, 145, 117);
     color: white;
 }
 
-/* FIN INDEX */
 
-
-/* Bootstrap Header */
-
-
-
-
-
-
-
-/* Fin header */
-/* Header responsivo */
-
-
-
-
-
-/* Fin header Responsivo */
 
 /* Productos, vitrina */
+.merch{
+    max-height: 300px;
 
-
-/*                  VITRINA                        ESTILO VITRINA      */
-
-
-
-
-
+}
 
 /* FIN VITRINA */
 
-/* CONTACTO */
-
-
-/* Fin Contacto */
-
-/* .Contenedor-pagina{
-    width: 49%;
-    margin: 5% auto;
-    margin-left: 500px auto;
-    padding: 30px;
-    border: 2px solid black;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    background-color: pink ;
-    
-
-} */
-
+/* FORMULARIO */
 
 
 /* LOGIN */
@@ -235,53 +192,7 @@ main .container{
 
 
 /* FOOTER */
-footer{
-    
-    padding-top: 1.25rem;
-    bottom: 0;
-}
-.pie_pagina {
-    background-color: gray;
-    width: 100%;
 
-
-}
-
-.pie_pagina .gridT {
-    margin: 0 auto;
-    padding: 1rem;
-    width: 100%;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-  
-}
-
-.pie_pagina .gridT .box figure {
-
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.pie_pagina .gridT .box figure img {
-    width: 250px;
-}
-
-.pie_pagina .gridT .box h2 {
-    color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie_pagina .gridT .box p {
-    margin-bottom: 20px;
-    color: red;
-}
 
 .contain .rss .rss-logo a {
 
@@ -294,6 +205,7 @@ footer{
     margin-right: 10px;
     background-color: rgb(138, 138, 135);
     text-align: center;
+    
 
 }
 
@@ -318,42 +230,21 @@ footer{
     background-color: white;
     color: rgb(6, 191, 253);
 }
-
-.pie_pagina .copirraiss {
-    text-align: center;
-    background: #0f8cc1;
+/* FOOTER SIEMPRE ABAJO 100% real no fake */
+main{
+    height: 100vh;
 }
-
 
 
 @media screen and (max-width: 768px) {
 
-    /* Menu hamburguesa */
-    .flexbox {
-        display: none;
-    }
-
-    .menu-desplegable {
-        display: block;
-    }
-
-    /* Fin menu hamburguesa */
-
-    /* Responsive Footer */
-    /* .pie_pagina .gridT {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    } */
-
-    /* Fin responsive Footer */
-    /* Resoinsive Body */
+    
+  
     .grid-content {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
         "foto1"
         "texto1"
         "foto2"
@@ -367,20 +258,20 @@ footer{
     .contain .rss .rss-logo .facebook {
         background-color: white;
         color: blue;
-    
+
     }
-    
+
     .contain .rss .rss-logo .youtube {
         background-color: white;
         color: rgb(228, 27, 27);
     }
-    
+
     .contain .rss .rss-logo .instagram {
         background-color: white;
         color: rgb(253, 4, 204);
-    
+
     }
-    
+
     .contain .rss .rss-logo .twitter {
         background-color: white;
         color: rgb(6, 191, 253);
@@ -396,5 +287,5 @@ footer{
 
 
 
-    
+
 
