@@ -1,0 +1,21 @@
+/*QUERYS*/
+
+@media screen and (max-width: 992px) {
+  form legend {
+    border: unset;
+  }
+
+
+}
+
+
+@media screen and (max-width: 575px) {
+  .formulariocolumn {
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    display: grid;
+  }
+
+
+}
