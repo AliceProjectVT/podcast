@@ -186,12 +186,12 @@ footer {
 footer .contenedor .logo {
   max-width: auto;
 }
-footer h2 {
-  font-size: 24px;
+footer h3 {
+  font-size: bold 20px;
   margin-bottom: 20px;
 }
-footer ul li {
-  margin-bottom: 10px;
+footer p {
+  color: rgb(222, 9, 9);
 }
 footer a {
   color: #fff;
