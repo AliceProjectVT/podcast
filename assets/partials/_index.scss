@@ -27,7 +27,7 @@
       
   }
   .bgc-text{
-    background-color: green;
+    background-color: rgb(238, 180, 110);
   }
 
   .texto1 {
@@ -61,8 +61,24 @@
 
   .texto3 {
     grid-area: texto3;
+    p{
+      .hipervinculo {
+        text-decoration: none;
+        border-bottom: 2px solid #008080;
+        color: #000000;
+        
+        font-size: bold ;
+        &:hover {
+          border-bottom: 2px solid #ff1493;
+          color: #ff1493;
+          transition: 0.8s
+        }
+      }
+      
+      
 
   }
+}
 
   .imagen3 {
     grid-area: imagen3;

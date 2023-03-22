@@ -29,7 +29,7 @@
   padding: 50px;
 }
 .grid-area .bgc-text {
-  background-color: green;
+  background-color: rgb(238, 180, 110);
 }
 .grid-area .texto1 {
   grid-area: texto1;
@@ -52,6 +52,17 @@
 }
 .grid-area .texto3 {
   grid-area: texto3;
+}
+.grid-area .texto3 p .hipervinculo {
+  text-decoration: none;
+  border-bottom: 2px solid #008080;
+  color: #000000;
+  font-size: bold;
+}
+.grid-area .texto3 p .hipervinculo:hover {
+  border-bottom: 2px solid #ff1493;
+  color: #ff1493;
+  transition: 0.8s;
 }
 .grid-area .imagen3 {
   grid-area: imagen3;
@@ -172,6 +183,9 @@ form input[type=submit]:hover {
 footer {
   padding: 40px 0;
 }
+footer .contenedor .logo {
+  max-width: auto;
+}
 footer h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -184,6 +198,7 @@ footer a {
   text-decoration: none;
 }
 footer .rss-logo a {
+  border-radius: 20px;
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -227,6 +242,14 @@ footer .rss-logo .twitter:hover {
 @media screen and (max-width: 992px) {
   form legend {
     border: unset;
+  }
+  .grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imagen1" "texto1" "imagen2" "texto2" "imagen3" "texto3";
+    padding: 20px 10px;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -4,7 +4,22 @@
   form legend {
     border: unset;
   }
+  .grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "imagen1"
+      "texto1"
+      "imagen2"
+      "texto2"
+      "imagen3"
+      "texto3";
+    padding: 20px 10px;
+    gap: 20px;
 
+
+  } 
 
 }
 
