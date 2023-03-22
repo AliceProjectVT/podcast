@@ -1,18 +1,58 @@
 footer {
-    padding: 40px 0;
-    h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      
-      ul li {
-        margin-bottom: 10px;
-      }
-      
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-      
-     
+  padding: 40px 0;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .rss-logo {
+    a {
+
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: rgb(11, 11, 11);
+      margin-right: 10px;
+      background-color: rgb(138, 138, 135);
+      text-align: center;
+
+    }
+
+    .facebook:hover {
+      background-color: white;
+      color: blue;
+    
+    }
+    
+    .youtube:hover {
+      background-color: white;
+      color: rgb(228, 27, 27);
+    }
+     .instagram:hover {
+      background-color: white;
+      color: rgb(253, 4, 204);
+    
+    }
+    
+   .twitter:hover {
+      background-color: white;
+      color: rgb(6, 191, 253);
+    }
+  }
+
+}
+
+
+

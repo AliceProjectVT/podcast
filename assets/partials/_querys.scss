@@ -8,14 +8,61 @@
 
 }
 
+@media screen and (max-width: 768px) {
+
+  .grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "imagen1"
+      "texto1"
+      "imagen2"
+      "texto2"
+      "imagen3"
+      "texto3";
+    padding: 20px 10px;
+    gap: 20px;
+
+
+  }
+}
 
 @media screen and (max-width: 575px) {
   .formulariocolumn {
-    padding: 5px;
-    margin: 0;
+    padding: unset;
+    margin: unset;
     width: 100%;
     display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*footer*/
+  .rss-logo{
+  .facebook {
+    background-color: white;
+    color: blue;
+
+  }
+
+  .youtube {
+    background-color: white;
+    color: rgb(228, 27, 27);
+  }
+
+  .instagram {
+    background-color: white;
+    color: rgb(253, 4, 204);
+
+  }
+
+  .twitter {
+    background-color: white;
+    color: rgb(6, 191, 253);
   }
 
 
 }
+
+
+}
+

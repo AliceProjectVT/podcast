@@ -1,36 +1,74 @@
+.contenido {
+  min-height: 100vh;
+}
 
-.row {
+.grid-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas:
+    "imagen1 texto1"
+    "texto2 imagen2"
+    "imagen3 texto3";
+    padding: 20px 60px;
+    gap: 20px;
+    align-items: stretch;
+
+  .contenedor-texto {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 50px;
+      
+  }
+  .bgc-text{
+    background-color: green;
+  }
+
+  .texto1 {
+    grid-area: texto1;
+
+  }
+
+  .imagen1 {
+    grid-area: imagen1;
+    background-image: url(../imagenesss/png-transparent-felsefeye-giris-philosophy-the-basics-felsefe-okuma-rehberi-contemporary-philosophy-the-book-of-healing-hand-drawn-sketch-books-template-painted-hand-thumbnail.png);
+    background-position: center center;
+    background-size: cover;
+    min-height: 50vh;
+
+  }
+
+  .texto2 {
+    grid-area: texto2;
+      
+
+  }
+
+  .imagen2 {
+    grid-area: imagen2;
+    background-image: url(../imagenesss/png-transparent-computer-icons-philosophy-can-symbol-philosophy-of-psychology-child-face-head.png);
+    background-position: center center;
+    background-size: cover;
     
-  
-    .col-md-6 {
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    
-    h2 {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
+
+  }
+
+  .texto3 {
+    grid-area: texto3;
+
+  }
+
+  .imagen3 {
+    grid-area: imagen3;
+    background-image: url(../imagenesss/png-clipart-thought-philosophy-knowledge-psychology-philosopher-others-miscellaneous-mammal.png);
+    background-position: center center;
+    background-size: cover;
     
   }
-.contenido{
-    min-height: 100vh;
 }
