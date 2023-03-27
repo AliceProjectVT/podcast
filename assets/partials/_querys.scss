@@ -1,9 +1,7 @@
 /*QUERYS*/
 
 @media screen and (max-width: 992px) {
-  form legend {
-    border: unset;
-  }
+ 
   .grid-area {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,8 +18,9 @@
 
 
   } 
-
 }
+  /*GALERIA */
+  
 
 @media screen and (max-width: 768px) {
 
